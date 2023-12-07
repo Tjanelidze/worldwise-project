@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
-    },
-    {
       "cityName": "Madrid",
       "country": "Spain",
       "emoji": "🇪🇸",
@@ -35,102 +23,6 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
-    },
-    {
-      "cityName": "Alcacer do Sal",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2023-12-07T10:16:43.377Z",
-      "notes": "",
-      "position": {
-        "lat": "38.25543637637949",
-        "lng": "-8.217773437500002"
-      },
-      "id": 98443198
-    },
-    {
-      "cityName": "Santa Marta de Magasca",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-12-07T10:48:54.367Z",
-      "notes": "test",
-      "position": {
-        "lat": "39.50404070558415",
-        "lng": "-6.08642578125"
-      },
-      "id": 98443199
-    },
-    {
-      "cityName": "Alcacer do Sal",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2023-12-07T10:48:54.367Z",
-      "notes": "test",
-      "position": {
-        "lat": "38.25543637637949",
-        "lng": "-8.217773437500002"
-      },
-      "id": 98443200
-    },
-    {
-      "cityName": "Hidra",
-      "country": "Tunisia",
-      "emoji": "🇹🇳",
-      "date": "2023-12-07T10:49:43.410Z",
-      "notes": "test",
-      "position": {
-        "lat": "35.56798097453868",
-        "lng": "8.45947204241538"
-      },
-      "id": 98443201
-    },
-    {
-      "cityName": "Chiat’ura",
-      "country": "Georgia",
-      "emoji": "🇬🇪",
-      "date": "2023-12-07T10:51:00.797Z",
-      "notes": "test",
-      "position": {
-        "lat": "42.35854391749705",
-        "lng": "43.1982421875"
-      },
-      "id": 98443202
-    },
-    {
-      "cityName": "Gali",
-      "country": "Georgia",
-      "emoji": "🇬🇪",
-      "date": "2023-12-07T10:53:26.177Z",
-      "notes": "test",
-      "position": {
-        "lat": "42.66628070564928",
-        "lng": "41.83593750000001"
-      },
-      "id": 98443203
-    },
-    {
-      "cityName": "T’alin",
-      "country": "Armenia",
-      "emoji": "🇦🇲",
-      "date": "2023-12-07T10:54:58.591Z",
-      "notes": "test",
-      "position": {
-        "lat": "40.396764305572056",
-        "lng": "43.65966796875001"
-      },
-      "id": 98443204
-    },
-    {
-      "cityName": "Aguilon",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-12-07T10:56:18.352Z",
-      "notes": "test",
-      "position": {
-        "lat": "41.3108238809182",
-        "lng": "-0.9887695312500001"
-      },
-      "id": 98443205
     }
   ]
 }
