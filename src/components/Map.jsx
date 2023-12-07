@@ -11,13 +11,13 @@ import {
 
 import styles from './Map.module.css';
 import { useEffect, useState } from 'react';
-import { useCitites } from '../contexts/CitiesContext';
+import { useCities } from '../contexts/CitiesContext';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { useUrlPosition } from '../hooks/useUrlPosition';
 import Button from './Button';
 
 export default function Map() {
-  const { cities } = useCitites();
+  const { cities } = useCities();
   const [mapPosition, setMapPoistion] = useState([40, 0]);
 
   const {

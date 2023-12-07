@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './CityItem.module.css';
-import { useCitites } from '../contexts/CitiesContext';
+import { useCities } from '../contexts/CitiesContext';
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat('en', {
@@ -10,7 +10,7 @@ const formatDate = (date) =>
   }).format(new Date(date));
 
 export default function CityItem({ city }) {
-  const { currentCity } = useCitites();
+  const { currentCity } = useCities();
   const { cityName, emoji, date, id, position } = city;
 
   return (
