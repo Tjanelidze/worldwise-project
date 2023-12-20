@@ -1,4 +1,10 @@
-import { createContext, useEffect, useContext, useReducer, useCallback } from 'react';
+import {
+  createContext,
+  useEffect,
+  useContext,
+  useReducer,
+  useCallback,
+} from 'react';
 
 const BASE_URL = 'https://localhost:8000';
 
@@ -45,6 +51,7 @@ function reducer(state, action) {
       return { ...state, isLoading: false, error: action.payload };
 
     default:
+      console.log(action);
       throw new Error('Unknown action type');
   }
 }
@@ -75,21 +82,24 @@ function CitiesProvider({ children }) {
     fetchCities();
   }, []);
 
-  const getCity = useCallback( async function getCity(id) {
-    if (Number(id) === currentCity.id) return;
+  const getCity = useCallback(
+    async function getCity(id) {
+      if (Number(id) === currentCity.id) return;
 
-    dispatch({ type: 'loading' });
-    try {
-      const res = await fetch(`${BASE_URL}/cities/${id}`);
-      const data = await res.json();
-      dispatch({ type: 'city/loaded', payload: data });
-    } catch (error) {
-      dispatch({
-        dispatch: 'rejected',
-        payload: 'There was an error loading city...',
-      });
-    }
-  }, [currentCity.id])
+      dispatch({ type: 'loading' });
+      try {
+        const res = await fetch(`${BASE_URL}/cities/${id}`);
+        const data = await res.json();
+        dispatch({ type: 'city/loaded', payload: data });
+      } catch (error) {
+        dispatch({
+          dispatch: 'rejected',
+          payload: 'There was an error loading city...',
+        });
+      }
+    },
+    [currentCity.id]
+  );
 
   async function createCity(newCity) {
     dispatch({ type: 'loading' });
